@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sudansh.upsight">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".App"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.upsight.android.internal.persistence.ContentProvider"
+            android:authorities="com.sudansh.upsight.upsight"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.upsight.app_token"
+            android:value="d584a1e450664b02a80d51cea2bbeeb7" />
+        <meta-data
+            android:name="com.upsight.public_key"
+            android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw//EWr80sNamRg2eRMni6IpxnbYbxSUwVJzEWD9ot274uIAijpfuzcVz5cXW9am
+b1DhSLTzlhdSrVAhNyBWHUfN4jjFziNw7Z9M1dwK
+/w4BWwMzVV+GdX2RsrzMkVnh2j3Av9DZFnvBqebo+Bnbaei9zUzfqvi+6SzutFzSS3M3jJvwVUpZ/gMDC34vBmA1pYAeGogS60YDs
+/QA/Zk6+WbQ6Vzn7JTmy3T/s+5AeKUYFsTzeYcPIvOhe9ha58OHOjJY6OTI5nd6zGu1GXHEZDvltmdDhrt1lDL2Jp
+/qFQNFgA1sGOc8Nd9znZhfl9xyd+UHM1aw8kMr5ew4OfZRgnQIDAQAB" />
+    </application>
+</manifest>
