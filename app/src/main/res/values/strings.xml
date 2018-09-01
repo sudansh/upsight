@@ -2,6 +2,18 @@
     <string name="app_name">Upsight</string>
     <string name="hint_name">Name</string>
     <string name="hint_age">Age</string>
-    <string name="hint_gender">Name</string>
+    <string name="hint_gender">Gender</string>
+
     <string name="save">Save</string>
+    <string name="track">Track</string>
+    <string name="create_milestone">Create Milestone</string>
+    <string name="show_billboard">Show Billboard</string>
+    <string name="title_managed_variables">Managed variables</string>
+    <string name="title_custom_event">Sending Custom Event</string>
+    <string name="error_empty_field">Empty!</string>
+    <string name="hint_key">Key</string>
+    <string name="hint_value">Value</string>
+    <string name="title_user_attributes">User Attributes</string>
+    <string name="title_milestone">Milestone</string>
+    <string name="error_loading_value">Error!</string>
 </resources>

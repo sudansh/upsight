@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="managedName"
+            type="com.sudansh.upsight.utils.ObservableString" />
+
+        <variable
+            name="managedCoins"
+            type="android.databinding.ObservableInt" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:divider="@drawable/divider_blank"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_managed_variables" />
+
+        <TextView
+            android:id="@+id/tvManagedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{managedName}"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/tvManagedCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{managedCoins+""}'
+            tools:text="@tools:sample/us_zipcodes" />
+    </LinearLayout>
+</layout>

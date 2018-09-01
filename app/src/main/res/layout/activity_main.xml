@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.sudansh.upsight.ui.LoginViewModel" />
+
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin"
+            android:showDividers="middle"
+            tools:context=".ui.MainActivity">
+
+            <include
+                layout="@layout/view_user_attributes"
+                app:age="@{viewmodel.age}"
+                app:gender="@{viewmodel.gender}"
+                app:name="@{viewmodel.name}" />
+
+            <include layout="@layout/view_custom_event" />
+
+            <include layout="@layout/view_milestone" />
+
+            <include
+                android:id="@+id/viewManaged"
+                layout="@layout/view_managed"
+                app:managedCoins="@{viewmodel.managedCoins}"
+                app:managedName="@{viewmodel.managedName}" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

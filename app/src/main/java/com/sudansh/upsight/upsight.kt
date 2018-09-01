@@ -1,2 +1,0 @@
-package com.sudansh.upsight
-

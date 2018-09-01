@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="key_name">name</string>
+    <string name="key_age">age</string>
+    <string name="key_gender">gender</string>
+    <string name="default_name">John Doe</string>
+    <integer name="default_age">42</integer>
+    <string name="default_gender">Male</string>
+    <string name="upsight_token">d584a1e450664b02a80d51cea2bbeeb7</string>
+</resources>

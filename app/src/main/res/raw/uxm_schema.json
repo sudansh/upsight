@@ -1,0 +1,16 @@
+[
+  {
+    "tag": "personage_name",
+    "description": "Default name for personage",
+    "type": "string",
+    "default": "Bob"
+  },
+  {
+    "tag": "personage_coins",
+    "description": "Number of coins available for personage",
+    "type": "integer",
+    "default": 2000,
+    "min": 0,
+    "max": 10000
+  }
+]

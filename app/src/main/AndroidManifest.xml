@@ -4,15 +4,16 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".App"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.LoginActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +28,7 @@
 
         <meta-data
             android:name="com.upsight.app_token"
-            android:value="d584a1e450664b02a80d51cea2bbeeb7" />
+            android:value="@string/upsight_token" />
         <meta-data
             android:name="com.upsight.public_key"
             android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw//EWr80sNamRg2eRMni6IpxnbYbxSUwVJzEWD9ot274uIAijpfuzcVz5cXW9am
@@ -35,5 +36,18 @@ b1DhSLTzlhdSrVAhNyBWHUfN4jjFziNw7Z9M1dwK
 /w4BWwMzVV+GdX2RsrzMkVnh2j3Av9DZFnvBqebo+Bnbaei9zUzfqvi+6SzutFzSS3M3jJvwVUpZ/gMDC34vBmA1pYAeGogS60YDs
 /QA/Zk6+WbQ6Vzn7JTmy3T/s+5AeKUYFsTzeYcPIvOhe9ha58OHOjJY6OTI5nd6zGu1GXHEZDvltmdDhrt1lDL2Jp
 /qFQNFgA1sGOc8Nd9znZhfl9xyd+UHM1aw8kMr5ew4OfZRgnQIDAQAB" />
+
+        <meta-data
+            android:name="com.upsight.user_attribute.string.name"
+            android:value="@string/default_name" />
+        <meta-data
+            android:name="com.upsight.user_attribute.integer.age"
+            android:value="@integer/default_age" />
+        <meta-data
+            android:name="com.upsight.user_attribute.string.gender"
+            android:value="@string/default_gender" />
+        <meta-data
+            android:name="com.upsight.session_callbacks"
+            android:value="com.sudansh.upsight.upsight.SessionCallback" />
     </application>
 </manifest>
